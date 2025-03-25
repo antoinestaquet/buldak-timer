@@ -7,9 +7,10 @@ workbox.routing.registerRoute(
 
 const cacheName = "buldak-v1";
 const contentToCache = [
-    "/buldak-timer/index.html",
-    "/buldak-timer/icons/manifest-icon-192.maskable.png",
-    "/buldak-timer/icons/manifest-icon-512.maskable.png"
+    "/index.html",
+    "/favicon.ico",
+    "/icons/manifest-icon-192.maskable.png",
+    "/icons/manifest-icon-512.maskable.png"
 ]
 
 self.addEventListener("install", (e) => {
