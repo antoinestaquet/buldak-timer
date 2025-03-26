@@ -1,7 +1,7 @@
 {
     "name": "Buldak Timer",
     "short_name": "Buldak",
-    "start_url": "/?home=true",
+    "start_url": "/buldak-timer/index.html",
     "icons": [
         {
             "src": "./icons/manifest-icon-192.maskable.png",
