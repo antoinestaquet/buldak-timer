@@ -124,10 +124,10 @@ window.addEventListener("load", (event) => {
 
     countdownButton.addEventListener("click", (e)=> {
         if (currentCookingStep == "boiling") {
-            countdownCounter = 1; //cookingSteps.boiling.time-1;
+            countdownCounter = cookingSteps.boiling.time-1;
         }
         else if (currentCookingStep == "sauceStep") {
-            countdownCounter = 1 ;//cookingSteps.sauceStep.time-1;
+            countdownCounter = cookingSteps.sauceStep.time-1;
         }
         
         instructions.style.display = "none";
