@@ -7,10 +7,7 @@ workbox.routing.registerRoute(
 
 const cacheName = "buldak-v1";
 const contentToCache = [
-    "./index.html",
-    "./app.js",
-    "./success-221935.mp3",
-    "./favicon.ico",
+    "./",
     "./icons/manifest-icon-192.maskable.png",
     "./icons/manifest-icon-512.maskable.png"
 ]
