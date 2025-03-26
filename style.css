@@ -1,0 +1,94 @@
+:root {
+  --lavender-blush: hsla(342, 33%, 94%, 1);
+  --fairy-tale: hsla(332, 40%, 84%, 1);
+  --cerise: hsla(343, 70%, 55%, 1);
+  --coffee: hsla(27, 25%, 34%, 1);
+  --copper: hsla(33, 55%, 42%, 1);
+}
+
+body {
+  font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: var(--copper);
+  color: var(--lavender-blush);
+}
+
+#snooze-button{
+  display: none;
+  margin-top: 16px;
+}
+
+
+h3, p {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  margin-top: 32px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+#countdown-display {
+  display: none;
+  font-size:xx-large;
+}
+
+/* CSS */
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: var(--cerise);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}

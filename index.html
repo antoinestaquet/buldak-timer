@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <main>
+        <div class="main-container">
+            <h3 id="title">¡Agua hirviendo!</h3>
+            <p id="instructions">Hierve 600ml de agua~</p>
+            <div class="countdown-container">
+                <div id="countdown-display">5:00</div>
+                <button class="button" id="countdown-button">Iniciar el contador</button>
+                <button class="button" id="snooze-button">Snooze</button>
+            </div>
+            <button class="button" id="button">Próxima etapa</button>
+        </div>
+    </main>
 
     <script>
         if ('serviceWorker' in navigator) {
@@ -16,5 +35,8 @@
         }
     </script>
 
+    <audio id="audio" src="./success-221935.mp3"></audio>
+
 </body>
+
 </html>
